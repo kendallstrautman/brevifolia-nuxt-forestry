@@ -1,7 +1,9 @@
 <template>
-    <section>
+    <section class="layout">
         <Header />
-        <nuxt />
+        <div class="content">
+            <nuxt />
+        </div>
     </section>
 </template>
 

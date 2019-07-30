@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Logo />
+    <BlogList />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import BlogList from '~/components/BlogList.vue'
 
 export default {
   layout: 'layout',
   components: {
-    Logo
+    BlogList
   }
 }
 </script>

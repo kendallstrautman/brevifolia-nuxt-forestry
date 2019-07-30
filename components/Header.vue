@@ -1,6 +1,6 @@
 <template>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <NuxtLink to="/">
                 <h1>The Blog Title</h1>
             </NuxtLink>
