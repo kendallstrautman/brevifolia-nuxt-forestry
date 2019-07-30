@@ -1,8 +1,6 @@
 <template>
   <div>
-    <BlogList posts="posts" />
-      <li v-for="post in posts" :key="post.attributes.title">{{post.attributes.title}}</li>
-    
+    <BlogList :posts="posts" />
   </div>
 </template>
 

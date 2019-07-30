@@ -1,5 +1,6 @@
 ---
 title: The oldest living organism on the planet
+slug: the-oldest-living-organism-on-the-planet
 author: Donal Rusk Currey
 date: 2019-07-10T07:00:00Z
 hero_image: "/maksim-shutov-JOEvZOTfp64-unsplash.jpg"
