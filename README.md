@@ -1,6 +1,6 @@
 # starter-blog-nuxt
 
-> starter blog using nuxt &amp; forestry
+> starter blog using nuxt &amp; forestry.io
 
 ## Build Setup
 
