@@ -1,6 +1,6 @@
 ---
 title: The most incredible juniper
-slug: rocky-mountain-juniper
+slug: /blog/rocky-mountain-juniper
 author: Walt Whitman
 date: 2019-07-08T16:05:29.000+00:00
 hero_image: "/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
