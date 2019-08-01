@@ -7,7 +7,6 @@ sections:
 - type: document
   path: config.json
   label: Site Info
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -20,3 +19,10 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+build:
+  preview_output_directory: public
+  instant_preview_command: yarn dev
+  install_dependencies_command: yarn install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
