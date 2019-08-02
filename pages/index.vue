@@ -23,12 +23,3 @@ export default {
   }
 }
 </script>
-
-  // const resolve = await require.context("~/content/blog-posts/", true, /\.md$/)
-  //     const imports = resolve.keys().map((key) => {
-  //       const  name = key.match(/\/(.+)\.md$/);
-  //       return resolve(name);
-  //     });
-  //     return {
-  //       posts: imports
-  //     }
