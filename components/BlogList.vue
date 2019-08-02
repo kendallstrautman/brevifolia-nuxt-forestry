@@ -6,7 +6,7 @@
                     <div class="hero_image">
                         <img :src="post.attributes.hero_image" :alt="post.attributes.title">
                     </div>
-                    <div class="blog__info">
+                    <div class="blogList__info">
                         <h2>{{ post.attributes.title }}</h2>
                         <h3>{{ new Date(post.attributes.date).toDateString().slice(4) }}</h3>
                         <p >{{ post.body.slice(0 , 200).trimEnd()}}...</p>

@@ -23,7 +23,7 @@
         min-height: 100%;
       }
     }
-    .blog__info {
+    .blogList__info {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -70,7 +70,7 @@
               transition: opacity 0.3s ease;
             }
           }
-          div.blog__info {
+          div.blogList__info {
             h2,
             h3,
             p {
@@ -96,7 +96,7 @@
           min-height: 0;
         }
       }
-      .blog__info {
+      .blogList__info {
         min-width: 70%;
       }
     }
@@ -104,7 +104,7 @@
   
   @media (min-width: 1280px) {
     .list {
-      .blog__info {
+      .blogList__info {
         padding: 3rem;
       }
       h3 {
