@@ -9,7 +9,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "frontmatter-markdown-loader": "^1.8.0",
