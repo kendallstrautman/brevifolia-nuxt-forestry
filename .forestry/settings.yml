@@ -23,7 +23,7 @@ use_front_matter_path: false
 file_template: ":filename:"
 instant_preview: true
 build:
-  preview_output_directory: dist
+  preview_output_directory: ".nuxt"
   instant_preview_command: yarn forestry-preview
   install_dependencies_command: yarn install
   preview_docker_image: node:10
