@@ -45,3 +45,5 @@ fields:
     color_format: Hex
   description: Choose text color for the info page
   default: "#EBEBEB"
+pages:
+- content/data/info.json
