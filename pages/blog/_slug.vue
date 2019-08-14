@@ -5,7 +5,7 @@
       </figure>
     <div class="blog__info" >
       <h1>{{ post.attributes.title }}</h1>
-      <h3>{{ post.attributes.date }}</h3>
+      <h3>{{ formattedDate }}</h3>
     </div>
     <div class="blog__body" v-html="post.html"></div>
     <h2 class="blog__footer">Written By: {{ post.attributes.author }}</h2>
@@ -17,14 +17,17 @@
     async asyncData({ params }) {
       try {
         const post = await import(`~/content/blog-posts/${params.slug}.md`);
-        console.debug(post)
         return {
           post
         }
       } catch(err) {
-        console.debug(err)
         return false
       }
+    }, 
+    computed: {
+      formattedDate() {
+        return new Date(this.post.attributes.date).toDateString().slice(4)
+      } 
     }
   }
 </script>

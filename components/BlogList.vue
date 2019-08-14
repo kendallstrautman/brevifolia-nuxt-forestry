@@ -8,8 +8,8 @@
                     </div>
                     <div class="blogList__info">
                         <h2>{{ post.attributes.title }}</h2>
-                        <h3>{{ new Date(post.attributes.date).toDateString().slice(4) }}</h3>
-                        <p >{{ post.body.slice(0 , 200).trimEnd()}}...</p>
+                        <h3>{{ formatDate(post.attributes.date) }}</h3>
+                        <p>{{ formatExcerpt(post.body) }}...</p>
                     </div>
                 </li>
             </NuxtLink>                  
@@ -19,6 +19,14 @@
 <script>
     export default {
         props: ['posts'], 
+        methods: {
+            formatDate(date) {
+                return new Date(date).toDateString().slice(4)
+            }, 
+            formatExcerpt(body) {
+                return body.slice(0 , 200).trimEnd()
+            }
+        }
     }
 </script>
 
