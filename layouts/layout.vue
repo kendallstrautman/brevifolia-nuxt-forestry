@@ -1,6 +1,6 @@
 <template>
     <section class="layout">
-        <Header />
+        <Header :is-info-page="isInfoPage" />
         <div class="content">
             <nuxt />
         </div>
@@ -9,10 +9,15 @@
 
 <script>
 import Header from '~/components/Header.vue'
-
     export default {
+        
         components: {
             Header
+        }, 
+        computed: {
+            isInfoPage() {
+                return this.$nuxt._route.name === "info" && true
+            }
         }
     }
 </script>

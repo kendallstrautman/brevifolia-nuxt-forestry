@@ -1,35 +1,40 @@
 <template>
-    <section class="info_blurb">
-        <h2> 
-            This blog was created using <a href="https://forestry.io">Forestry</a>
-            & <a href="https://gatsbyjs.com">Gatsby</a>
-            <br />
-            <br /> 
-            To get started, import this site into Forestry or checkout the
-            repository <a href={repoUrl}>here</a>.
-        </h2>
-        <ul>
-            <li>
-                <p>
-                    <a href="">Email: email</a>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a href="">Twitter: twitter</a>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a href="">Github: github</a>
-                </p>
-            </li>
-        </ul>
-    </section>
+        <section class="info_blurb">
+            <div v-html="data.description"></div>
+            <div v-html="data.cta"></div>
+            <ul>
+                <li>
+                    <p>
+                        <a :href="`mailto:${data.contact.email}`">Email: {{ data.contact.email}}</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a :href="`https://twitter.com/${data.contact.twitter_handle}`">Twitter: @{{ data.contact.twitter_handle}}</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a :href="`https://github.com/${data.contact.github_handle}`">Github: {{ data.contact.github_handle }}</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
 </template>
 
 <script>
     export default {
-       layout: "layout" 
+        layout: 'layout',
+        async asyncData() {
+            try {
+                const data = await import(`~/content/data/info.json`);
+                return {
+                data
+                }
+            } catch(err) {
+                return false
+            }
+        }
     }
 </script>
+

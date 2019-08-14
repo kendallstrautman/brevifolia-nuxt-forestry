@@ -14,7 +14,7 @@ sections:
 - type: heading
   label: Config
 - type: document
-  path: config.json
+  path: content/data/config.json
   label: Site Info
 upload_dir: static
 public_path: ''
