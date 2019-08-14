@@ -11,11 +11,11 @@ fields:
       format: html-blocks
 - type: textarea
   name: cta
-  label: cta
   config:
     wysiwyg: true
     schema:
       format: html-blocks
+  label: Call to action
 - type: field_group
   name: contact
   label: contact
