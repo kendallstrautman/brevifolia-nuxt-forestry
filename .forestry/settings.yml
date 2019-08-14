@@ -14,11 +14,9 @@ sections:
 - type: document
   path: content/data/authors.json
   label: Author List
-  match: "**/*"
 - type: document
   path: content/data/info.json
   label: Info Page
-  match: "**/*"
 - type: heading
   label: Config
 - type: document
