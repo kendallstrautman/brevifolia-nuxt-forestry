@@ -18,7 +18,6 @@ fields:
   label: Call to action
 - type: field_group
   name: contact
-  label: contact
   fields:
   - type: text
     name: email
@@ -29,6 +28,7 @@ fields:
   - type: text
     name: github_handle
     label: github_handle
+  label: Contact Info
 - name: background_color
   type: color
   config:
