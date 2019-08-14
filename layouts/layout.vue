@@ -9,8 +9,8 @@
 
 <script>
 import Header from '~/components/Header.vue'
+
     export default {
-        
         components: {
             Header
         }, 
@@ -18,6 +18,7 @@ import Header from '~/components/Header.vue'
             isInfoPage() {
                 return this.$nuxt._route.name === "info" && true
             }
-        }
+        },
     }
 </script>
+

@@ -34,6 +34,18 @@
             } catch(err) {
                 return false
             }
+        },
+        computed: {
+            isInfoPage() {
+                return this.$nuxt._route.name === "info" && true
+            }
+        },
+        head() {
+            return {
+                bodyAttrs: {
+                    style: this.isInfoPage && `background-color: ${this.data.background_color}; color: ${this.data.text_color}`
+                }
+            }
         }
     }
 </script>
