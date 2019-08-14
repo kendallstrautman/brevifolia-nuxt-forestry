@@ -8,9 +8,22 @@ fields:
 - type: text
   name: slug
   label: slug
-- type: text
-  name: author
-  label: author
+  description: This needs to exactly match the file name
+  config:
+    required: true
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: author-list
+      file: content/data/authors.json
+      path: authors
+  label: Author
+  description: Select author, to add a new author, go to Authors List
 - type: datetime
   name: date
   label: date
