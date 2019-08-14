@@ -1,12 +1,11 @@
 ---
 title: The oldest living organism on the planet
-slug: /blog/the-oldest-living-organism-on-the-planet
-author: Donal Rusk Currey
-date: 2019-07-10T07:00:00Z
+slug: "/blog/the-oldest-living-organism-on-the-planet"
+author: Grace Hopper
+date: 2019-07-10T07:00:00.000+00:00
 hero_image: "/maksim-shutov-JOEvZOTfp64-unsplash.jpg"
 
 ---
-
 The term bristlecone pine covers three species of pine tree, genus Pinus. All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, Pinus longaeva, is among the longest-lived life forms on Earth. The oldest _Pinus longaeva_ is more than 5,000 years old,[\[1\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-oldest-1) making it the oldest known individual of any species.
 
 ![](/scott-webb-qauaqihMwpc-unsplash.jpg)
