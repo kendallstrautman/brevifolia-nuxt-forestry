@@ -25,6 +25,11 @@
 <script>
     export default {
         layout: 'layout',
+        computed: {
+            isInfoPage() {
+                return this.$nuxt._route.name === "info" && true
+            }
+        },
         async asyncData() {
             try {
                 const data = await import(`~/content/data/info.json`);
@@ -33,11 +38,6 @@
                 }
             } catch(err) {
                 return false
-            }
-        },
-        computed: {
-            isInfoPage() {
-                return this.$nuxt._route.name === "info" && true
             }
         },
         head() {

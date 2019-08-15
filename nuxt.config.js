@@ -47,7 +47,7 @@ export default {
    */
   build: {
     /*
-     ** You can extend webpack config here
+     ** Using frontmatter-markdown-loader here to parse md files
      */
     extend(config, ctx) {  
       config.module.rules.push(

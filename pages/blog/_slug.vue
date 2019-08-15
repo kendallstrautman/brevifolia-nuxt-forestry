@@ -1,3 +1,5 @@
+// this is a dynamically created template
+
 <template>
   <article class="blog">
       <figure class="blog__hero">
@@ -14,6 +16,7 @@
 <script>
   export default {
     layout: "layout",
+    // get the slug as a param to import the correct md file
     async asyncData({ params }) {
       try {
         const post = await import(`~/content/blog-posts/${params.slug}.md`);
