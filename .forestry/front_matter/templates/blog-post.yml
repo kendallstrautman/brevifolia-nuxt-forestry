@@ -10,7 +10,8 @@ fields:
 - type: text
   name: slug
   label: slug
-  description: This needs to exactly match the file name
+  description: 'This needs to exactly match the file name, all lowercase, separated
+    by - '
   config:
     required: true
 - name: author
