@@ -36,7 +36,7 @@ fields:
     color_format: Hex
   label: Background Color
   description: Choose background color for info page
-  default: "#ACC2BC"
+  default: "#B1BCBC"
 - name: text_color
   type: color
   label: Text Color
