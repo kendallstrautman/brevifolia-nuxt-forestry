@@ -7,6 +7,7 @@ fields:
   label: title
   config:
     required: true
+  description: Enter title, needs to match filename for routing
 - name: author
   type: select
   default: []
