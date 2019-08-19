@@ -5,6 +5,8 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: text
   name: slug
   label: slug
@@ -15,7 +17,7 @@ fields:
   type: select
   default: []
   config:
-    required: false
+    required: true
     options: []
     source:
       type: documents
@@ -27,6 +29,8 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    required: true
 - type: file
   name: hero_image
   label: hero_image
