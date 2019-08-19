@@ -7,13 +7,6 @@ fields:
   label: title
   config:
     required: true
-- type: text
-  name: slug
-  label: slug
-  description: This needs to exactly match the file name, all lowercase, separated
-    by - hyphens
-  config:
-    required: true
 - name: author
   type: select
   default: []
