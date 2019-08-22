@@ -81,7 +81,6 @@ function getDynamicPaths(urlFilepathTable) {
       const routes = glob
         .sync(filepathGlob)
         .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
-        console.log(routes)
       return routes
     })
   );

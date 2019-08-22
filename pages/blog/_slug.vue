@@ -36,7 +36,6 @@
           return item === null || item === undefined
         }
         console.log(this.sortedPaths)
-        console.log(nextPath)
         return nextPath
       } 
     },
@@ -69,8 +68,10 @@
         sortedPosts.map(post => {
           // clean up the path
           const relPath = post.attributes._meta.resourcePath.slice(86, -3)
+          console.log(relPath)
           sortedPaths.push(relPath)
         })
+        console.log(sortedPaths)
         return {
           sortedPaths,
           post,
