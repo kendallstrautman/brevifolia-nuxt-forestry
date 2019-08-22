@@ -4,7 +4,7 @@
   </a>
   &nbsp;
   <a href="https://nuxtjs.org/">
-    <img src="/static/logo/nuxtjs-typo.svg" width="100" height="28">
+    <img src="/static/nuxtjs-typo.svg" width="100" height="28">
   </a>
 </p>
 <h1 align="center">
