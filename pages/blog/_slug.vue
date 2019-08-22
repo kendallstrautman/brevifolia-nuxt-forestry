@@ -72,7 +72,7 @@
           // clean up the path
           const relPath = post.attributes._meta.resourcePath.slice(86, -3)
           console.log(relPath)
-          sortedPaths.push(relPath)
+          sortedPaths.push(post.attributes._meta.resourcePath)
         })
         console.log(sortedPaths)
         return {
