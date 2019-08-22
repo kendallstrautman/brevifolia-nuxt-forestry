@@ -4,7 +4,7 @@ const glob = require('glob');
 const config = require("./content/data/config.json")
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/content/blog-posts': 'blog/*.md'
+  '/blog': 'content/blog-posts/*.md',
  });
 
 export default {
@@ -75,6 +75,7 @@ export default {
 
 /* https://github.com/jake-101/bael-template */
 function getDynamicPaths(urlFilepathTable) {
+  console.log(urlFilepathTable)
   return [].concat(
     ...Object.keys(urlFilepathTable).map(url => {
       const filepathGlob = urlFilepathTable[url];
