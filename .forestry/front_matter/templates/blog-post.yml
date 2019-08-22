@@ -30,8 +30,8 @@ fields:
   name: hero_image
   label: hero_image
 pages:
-- content/blog-posts/song-of-myself.md
 - content/blog-posts/an-essay-on-walking.md
 - content/blog-posts/sunflower-sutra.md
-- content/blog-posts/ne-te-quaesiveris-extra.md
+- content/blog-posts/song-of-myself.md
 - content/blog-posts/the-geneology-of-morals.md
+- content/blog-posts/ne-te-quaesiveris-extra.md
