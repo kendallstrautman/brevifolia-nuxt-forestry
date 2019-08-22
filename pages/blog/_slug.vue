@@ -85,7 +85,7 @@ const firstBlogPath = this.sortedPaths[0]
         sortedPosts.map(post => {
           console.log(post.attributes._meta.resourcePath)
           // clean up the path
-          const relPath = post.attributes._meta.resourcePath.slice(86, -3)
+          const relPath = post.attributes._meta.resourcePath
           console.log(relPath)
           sortedPaths.push(relPath)
         })
