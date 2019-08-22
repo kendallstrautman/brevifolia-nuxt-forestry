@@ -51,6 +51,8 @@
         const posts =  allPosts.keys().map((key) => {
           return allPosts(key)
         });
+        console.log(allPosts.keys())
+        console.log(posts)
         const sortedPosts = posts.sort((a,b) => {
           const dateA = new Date(a.attributes.date);
           const dateB = new Date(b.attributes.date);
@@ -62,6 +64,7 @@
           }
             return 0;
         })
+        console.log(sortedPosts)
         const sortedPaths = [] 
         sortedPosts.map(post => {
           // clean up the path

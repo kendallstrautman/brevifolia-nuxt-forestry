@@ -73,7 +73,7 @@ export default {
  * @param {*} urlFilepathTable
  */
 
-/* https://github.com/jake-101/bael-template */
+/* referenced https://github.com/jake-101/bael-template */
 function getDynamicPaths(urlFilepathTable) {
   return [].concat(
     ...Object.keys(urlFilepathTable).map(url => {
