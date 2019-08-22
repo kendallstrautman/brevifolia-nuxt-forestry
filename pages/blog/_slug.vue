@@ -70,6 +70,7 @@
           post,
         }
       } catch(err) {
+        console.debug(err)
         return false
       }
     }, 

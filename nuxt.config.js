@@ -1,4 +1,6 @@
-import path from "path"
+import path from "path";
+// eslint-disable-next-line 
+const config = require("./content/data/config.json")
 
 
 export default {
@@ -7,14 +9,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: config.title || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: config.description || ''
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
