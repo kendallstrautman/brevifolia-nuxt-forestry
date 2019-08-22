@@ -29,13 +29,11 @@
       }, 
       nextBlogPath() {
         const firstBlogPath = this.sortedPaths[0]
-        console.log('in computed!')
         // if there's no 'next' path, return the first path
         const nextPath = isNull(this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]) ? firstBlogPath : this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]
         function isNull(item) {
           return item === null || item === undefined
         }
-        console.log(nextPath)
         return nextPath
       } 
     },
@@ -67,7 +65,6 @@
           let relPath = post.attributes._meta.resourcePath.split('/')
           // get the end of the path, remove '.md'
           relPath = relPath[relPath.length - 1].slice(0, -3)
-          console.log(relPath)
           sortedPaths.push(relPath)
         })
         return {
@@ -82,6 +79,3 @@
     }, 
   }
 </script>
-
-//creat a regex that captures the characters between the last / and .md at the end 
-//or i could try to just capture anything up until content/...then i am in control of that path
