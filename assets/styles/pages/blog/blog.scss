@@ -47,7 +47,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
-      padding: 1.5rem;
+      padding: 1.5rem 1rem;
       line-height: 1.2;
       margin-bottom: 1.5rem;
   }
@@ -98,6 +98,9 @@
   .blog__body {
       max-width: 800px;
       padding: 0 2rem;
+      h1, h2, h3, h4, h5, h6 {
+        padding: 1.5rem;
+    }
       span {
       width: 100%;
       margin: 1.5rem auto;

@@ -30,6 +30,7 @@
       nextBlogPath() {
         const firstBlogPath = this.sortedPaths[0]
         const currentPath = this.$nuxt._route.path
+        // if there's no 'next' path, return the first path
         const nextPath = isNull(this.sortedPaths[this.sortedPaths.indexOf(currentPath) + 1]) ? firstBlogPath : this.sortedPaths[this.sortedPaths.indexOf(currentPath) + 1]
         function isNull(item) {
           return item === null || item === undefined
@@ -39,9 +40,10 @@
     },
     // get the slug as a param to import the correct md file
     async asyncData({ params }) {
-      // get this current post, along with all posts(to route next blog)
       try {
+        // get current post data
         const post = await import(`~/content/blog-posts/${params.slug}.md`);
+        // get all post data for next route
         const allPosts = await require.context("~/content/blog-posts/", true, /\.md$/)
         const posts =  allPosts.keys().map((key) => {
           return allPosts(key)
@@ -59,6 +61,7 @@
         })
         const sortedPaths = [] 
         sortedPosts.map(post => {
+          // clean up the path
           const relPath = `/blog${post.attributes._meta.resourcePath.slice(85, -3)}`
           sortedPaths.push(relPath)
         })

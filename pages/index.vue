@@ -15,9 +15,10 @@ export default {
     BlogList
   },
   async asyncData() {
-      // get the context to map over all blog posts
+      // create context via webpack to map over all blog posts
       const allPosts = await require.context("~/content/blog-posts/", true, /\.md$/)
       const posts =  allPosts.keys().map((key) => {
+        // give back the value of each post context
         return allPosts(key)
       });
       return {

@@ -5,12 +5,12 @@
             <ul>
                 <li>
                     <p>
-                        <a :href="`mailto:${data.contact.email}`">Email: {{ data.contact.email}}</a>
+                        <a :href="`mailto:${data.contact.email}`">Email: {{ data.contact.email }}</a>
                     </p>
                 </li>
                 <li>
                     <p>
-                        <a :href="`https://twitter.com/${data.contact.twitter_handle}`">Twitter: @{{ data.contact.twitter_handle}}</a>
+                        <a :href="`https://twitter.com/${data.contact.twitter_handle}`">Twitter: @{{ data.contact.twitter_handle }}</a>
                     </p>
                 </li>
                 <li>

@@ -29,5 +29,3 @@ Showing the best and dividing it from the worst age vexes age,
 Welcome is every organ and attribute of me, and of any man hearty and clean, Not an inch nor a particle of an inch is vile, and none shall be less familiar than the rest.
 
 I am satisfied—I see, dance, laugh, sing; As the hugging and loving bed-fellow sleeps at my side through the night, and withdraws at the peep of the day with stealthy tread. Leaving me baskets cover’d with white towels swelling the house with their plenty, Shall I postpone my acceptation and realization and scream at my eyes, That they turn from gazing after and down the road, And forthwith cipher and show me to a cent, Exactly the value of one and exactly the value of two, and which is ahead?
-
-## 
