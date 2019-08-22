@@ -1,7 +1,11 @@
 import path from "path";
-// eslint-disable-next-line 
+/* eslint-disable */
+const glob = require('glob');
 const config = require("./content/data/config.json")
-
+/* eslin-enable */
+const dynamicRoutes = getDynamicPaths({
+  '/posts': 'posts/*.md'
+ });
 
 export default {
   mode: 'universal',
@@ -59,5 +63,24 @@ export default {
           include: path.resolve(__dirname, "content/blog-posts")
       })
     }    
+  },
+  generate: {
+    routes: dynamicRoutes
   }
+}
+/**
+ * Create an array of URLs from a list of files
+ * @param {*} urlFilepathTable
+ */
+
+/* https://github.com/jake-101/bael-template */
+function getDynamicPaths(urlFilepathTable) {
+  return [].concat(
+    ...Object.keys(urlFilepathTable).map(url => {
+      const filepathGlob = urlFilepathTable[url];
+      return glob
+        .sync(filepathGlob, { cwd: 'content' })
+        .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
+    })
+  );
 }
