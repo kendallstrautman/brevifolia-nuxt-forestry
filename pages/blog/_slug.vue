@@ -36,7 +36,7 @@
           return item === null || item === undefined
         }
         console.log(this.sortedPaths)
-        console.log(this.nextPath)
+        console.log(nextPath)
         return nextPath
       } 
     },
