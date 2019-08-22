@@ -29,6 +29,8 @@
       }, 
       nextBlogPath() {
         const firstBlogPath = this.sortedPaths[0]
+        console.log('in computed!')
+        console.log(this.sortedPaths)
         console.log(this.currentPath)
         // if there's no 'next' path, return the first path
         const nextPath = isNull(this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]) ? firstBlogPath : this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]
@@ -66,6 +68,7 @@
         console.log(sortedPosts)
         const sortedPaths = [] 
         sortedPosts.map(post => {
+          console.log(post)
           // clean up the path
           const relPath = post.attributes._meta.resourcePath.slice(86, -3)
           console.log(relPath)
