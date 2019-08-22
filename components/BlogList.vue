@@ -56,8 +56,8 @@
 </script>
 
 /* 
-
-#2 - i would love to figure out how to show the md in the summary... right now its just plaintext
+TODO -- i would love to figure out how to show the md in the summary... 
+right now its just plaintext
  */
 
 
