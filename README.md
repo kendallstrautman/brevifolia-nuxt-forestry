@@ -51,7 +51,7 @@ You should then be able to navigate to localhost:3000 in your web browser
 ## Project Structure 
 
 - Site-level configuration is stored in `content/data/config.json`. This data is loaded into `nuxt.config.js` to provide default site metadata. 
-- Add and access webpack and Nuxt config options via `gridsome.config.js`. Global styles are loaded here.
+- Add and access webpack and Nuxt config options via `gridsome.config.js`. Global styles are loaded here. This is also where all the dynamic routes are generated for static export. [This blog](https://regenrek.com/posts/create-a-frontmatter-markdown-powered-blog-with-nuxt-js-in-2019/) was a big help in figuring this out.
 - Edit global & reset styles via `assets/styles/...`. All component and page scss files are imported in the `global.scss` file.
 - `content/...`contains all your markdown blog posts & data files (e.g. authors list, info page data). These are all editable by Forestry. 
 - Images live and are uploaded in `static/`
