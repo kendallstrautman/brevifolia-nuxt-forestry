@@ -22,7 +22,12 @@
 </template>
 <script>
     export default {
-        props: ['posts'], 
+        props: {
+            posts: {
+                type: Array,
+                required: true
+            }        
+        }, 
         computed: {
             sortedPosts() {
                 const sortedPosts = this.posts
